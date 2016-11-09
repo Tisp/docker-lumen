@@ -3,4 +3,6 @@ RUN apt-get update && apt-get install -y libmcrypt-dev
 
 # lumen packages
 RUN apt-get install -y php5-memcached
-RUN docker-php-ext-install mcrypt mbstring tokenizer mysqli pdo_mysql pdo_pgsql
+RUN apt-get install -y libpq-dev
+RUN docker-php-ext-configure pgsql -with-pgsql=/usr/local/pgsql
+RUN docker-php-ext-install mcrypt mbstring tokenizer pdo pdo_pgsql

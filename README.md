@@ -1,4 +1,4 @@
-# Docker + Lumen with Nginx and MySQL
+# Docker + Lumen with Nginx and PostgreSQL
 
 ![image](Lumen_splash.png)
 
